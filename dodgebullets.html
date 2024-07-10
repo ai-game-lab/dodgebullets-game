@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 遊戲生成實驗室 - 閃躲飛彈</title>
+  <link rel="stylesheet" href="style/dodgebullets.css">
+  <!-- 引入像素風格字體 -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <!-- SEO meta tags -->
+  <meta name="description" content="閃躲飛彈是一款刺激的飛行射擊遊戲，你需要控制飛行器閃躲來自四面八方的飛彈，看看你能堅持多久！">
+  <meta name="keywords" content="AI 遊戲生成實驗室, AI, 遊戲, HTML5, 閃躲飛彈, 飛行射擊, 像素風格">
+  <meta name="author" content="AI Game Lab">
+  <link rel="stylesheet" href="./style/index.css">
+  <link rel="canonical" href="http://ai-game-lab.com/">
+</head>
+<body>
+  <div id="start-game">
+    <img id="start-image" src="./images/dodgebullets.webp" alt="Start Image">
+    <button onclick="startGame()">開始遊戲</button>
+    <div class="game-rules">
+      <h3>遊戲規則</h3>
+      <p>控制飛行器閃避從四面八方飛來的飛彈，看看你能堅持多久。</p>
+      <p>電腦版操控:使用方向鍵（↑↓←→）控制飛行器的移動方向和角度。</p>
+      <p>手機版操控在:觸控螢幕上滑動手指以控制飛行器的移動方向和角度。</p>
+    </div>
+   
+  </div>
+  <div id="game-over">
+    <div>遊戲結束</div>
+    <div id="time-display"></div>
+    <div id="high-score-display"></div>
+    <button onclick="startGame()">重新開始</button>
+  </div>
+  <canvas id="gameCanvas"></canvas>
+</body>
+</html>
